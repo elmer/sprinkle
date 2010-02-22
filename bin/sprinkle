@@ -43,15 +43,15 @@ Options are:
 BANNER
   opts.separator ""
   opts.on("-s", "--script=PATH", String,
-          "Path to a sprinkle script to run") { |OPTIONS[:path]| }
+          "Path to a sprinkle script to run") { |a| OPTIONS[:path] = a }
   opts.on("-t", "--test",
-          "Process but don't perform any actions") { |OPTIONS[:testing]| }
+          "Process but don't perform any actions") { |a| OPTIONS[:testing] = a }
   opts.on("-v", "--verbose",
-          "Verbose output") { |OPTIONS[:verbose]| }
+          "Verbose output") { |a| OPTIONS[:verbose] = a }
   opts.on("-c", "--cloud",
-          "Show powder cloud, ie. package hierarchy and installation order") { |OPTIONS[:cloud]| }
+          "Show powder cloud, ie. package hierarchy and installation order") { |a| OPTIONS[:cloud] = a }
   opts.on("-f", "--force",
-          "Force installation of all packages even if it is detected that it has been previously installed") { |OPTIONS[:force]| }
+          "Force installation of all packages even if it is detected that it has been previously installed") { |a| OPTIONS[:force] = a }
   opts.on("-h", "--help",
           "Show this help message.") { puts opts; exit }
   opts.parse!(ARGV)
