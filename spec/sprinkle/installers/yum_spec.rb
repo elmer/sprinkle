@@ -42,7 +42,9 @@ describe Sprinkle::Installers::Yum do
       @installer.send(:install_sequence).should == [ 'op1', 'yum install ruby -y', 'op2' ]
     end
 
-    it 'should install a specific version if defined'
+    it 'should install a specific version if defined' do
+      pending 'Not Yet Implemented' 
+    end
 
   end
 

@@ -51,7 +51,9 @@ describe Sprinkle::Installers::Apt do
       @installer.send(:install_sequence).should == [ 'op1', %(env DEBCONF_TERSE='yes' DEBIAN_PRIORITY='critical' DEBIAN_FRONTEND=noninteractive apt-get --force-yes -qyu install ruby), 'op2' ]
     end
 
-    it 'should install a specific version if defined'
+    it 'should install a specific version if defined' do
+      pending 'Not Yet Implemented' 
+    end
 
   end
   

@@ -42,8 +42,12 @@ describe Sprinkle::Installers::Rpm do
       @installer.send(:install_sequence).should == [ 'op1', 'rpm -Uvh ruby', 'op2' ]
     end
 
-    it 'should specify a non interactive mode to the apt installer'
-    it 'should install a specific version if defined'
+    it 'should specify a non interactive mode to the apt installer' do
+      pending 'Not Yet Implemented' 
+    end
+    it 'should install a specific version if defined' do
+      pending 'Not Yet Implemented' 
+    end
 
   end
 

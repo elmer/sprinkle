@@ -42,7 +42,9 @@ describe Sprinkle::Installers::FreebsdPkg do
       @installer.send(:install_sequence).should == [ 'op1', 'pkg_add -r ruby', 'op2' ]
     end
 
-    it 'should install a specific version if defined'
+    it 'should install a specific version if defined' do
+      pending 'Not Yet Implemented' 
+    end
 
   end
 
