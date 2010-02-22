@@ -22,7 +22,7 @@ module Sprinkle
     class Rake < Installer
       def initialize(parent, commands, options = {}, &block) #:nodoc:
         super parent, options, &block
-        @commands = commands.to_a
+        @commands = Array(commands)
       end
 
       protected
