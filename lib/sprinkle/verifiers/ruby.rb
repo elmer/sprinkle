@@ -18,7 +18,7 @@ module Sprinkle
       # Checks if a gem exists by calling "sudo gem list" and grepping against it.
       def has_gem(name, version=nil)
         version = version.nil? ? '' : version.gsub('.', '\.')
-        @commands << "sudo gem list | grep -e '^#{name} (.*#{version}.*)$'"
+        @commands << "gem list | grep -e '^#{name} (.*#{version}.*)$'"
       end
     end
   end
