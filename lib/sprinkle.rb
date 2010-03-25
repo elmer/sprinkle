@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'active_support'
+require 'active_support/dependencies'
 
 # Use active supports auto load mechanism
 ActiveSupport::Dependencies.load_paths << File.dirname(__FILE__)
